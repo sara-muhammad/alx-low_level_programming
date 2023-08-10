@@ -12,6 +12,5 @@ int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
 
-	a = 0; /* Valid comment */
-	return (a);
+	return (0);
 }

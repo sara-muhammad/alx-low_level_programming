@@ -17,6 +17,9 @@ int main(void)
 	for (i = 0; i < 26; i++)
 	{
 		putchar(alp[i]);
+	}
+	for (i = 0; i < 26; i++)
+	{
 		putchar(aup[i]);
 	}
 	putchar('\n');

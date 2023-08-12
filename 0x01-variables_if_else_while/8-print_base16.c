@@ -13,16 +13,15 @@ int main(void)
 {
 	int i;
 	int x;
-	char arr[6] = {"ABCDEF"};
 
-	for (i = 0; i < 10; i++)
+	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
 	}
 
-	for (x = 0; x < 6; x++)
+	for (x = 97; x < 103; x++)
 	{
-		putchar(arr[x]);
+		putchar(x);
 	}
 	putchar('\n');
 	return (0);

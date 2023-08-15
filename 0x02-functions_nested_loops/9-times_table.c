@@ -11,14 +11,22 @@ void times_table(void)
 	int n;
 	int multi;
 
-	for (i = 0; i <= 9; i++)
+	printf("%d", 0);
+
+	for (i = 1; i <= 9; i++)
 	{
-		for (n = 0; n <= 9; n++)
+		for (n = 1; n <= 9; n++)
 		{
 			multi = i * n;
-			printf("%d, ", multi);
+			if (multi <= 9)
+			{
+				printf("  %d,", multi);
+			}
+			else
+			{
+				printf(" %d,", multi);
+			}
 		}
 		printf("\n");
-
 	}
 }

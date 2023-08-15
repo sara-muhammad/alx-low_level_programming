@@ -19,8 +19,10 @@ int main(void)
 {
 	char str[] = "_putchar";
 
-	for (int ch = 0; ch <= 7; ch++)
+	for (int ch = 1; ch < 8; ch++)
+	{
 		_putchar(str[ch]);
-	_putchar['\n'];
+	}
+	_putchar('\n');
 	return (0);
 }

@@ -16,7 +16,12 @@ void times_table(void)
 	{
 		for (n = 0; n <= 9; n++)
 		{
-			if (n < 9)
+			if (n == 0)
+			{
+				multi = i * n;
+				printf("%d,", multi);
+			}
+			else if (n < 9)
 			{
 				multi = i * n;
 				if (multi <= 9)

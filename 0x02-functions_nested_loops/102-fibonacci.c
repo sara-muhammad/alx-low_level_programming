@@ -12,22 +12,22 @@
 int main(void)
 {
 	int n;
-	int fib[50];
+	unsigned long fib[50];
 
 	fib[0] = 1;
 	fib[1] = 2;
-	printf("%d, %d, ", fib[0], fib[1]);
+	printf("%lu, %lu, ", fib[0], fib[1]);
 	for (n = 2; n <= 49; n++)
 	{
 		if (n < 49)
 		{
 			fib[n] = fib[n - 1] + fib[n - 2];
-			printf("%d, ", fib[n]);
+			printf("%lu, ", fib[n]);
 		}
 		if (n == 49)
 		{
 			fib[n] = fib[n - 1] + fib[n - 2];
-			printf("%d", fib[n]);
+			printf("%lu", fib[n]);
 		}
 	}
 

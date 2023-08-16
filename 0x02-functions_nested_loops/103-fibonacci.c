@@ -29,6 +29,6 @@ int main(void)
 			total = total + fib[n];
 		}
 	}
-	printf("%lf\n", total);
+	printf("%f\n", total);
 	return (0);
 }

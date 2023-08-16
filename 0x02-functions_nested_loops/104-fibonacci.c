@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	long fib1 = 1, fib2 = 2, sum = 0;
+	unsigned long fib1 = 1, fib2 = 2, sum = 0;
 	int i = 3;
 
 	while (i <= 98)
@@ -20,9 +20,9 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 		if (i < 98)
-			printf("%ld, ", sum);
+			printf("%lu, ", sum);
 		if (i == 98)
-			printf("%ld\n", sum);
+			printf("%lu\n", sum);
 		i++;
 	}
 	printf("%ld, ", sum);

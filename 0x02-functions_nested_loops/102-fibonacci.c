@@ -23,7 +23,5 @@ int main(void)
 		printf("%d, ", fib[n]);
 	}
 
-
-	}
 	return (0);
 }

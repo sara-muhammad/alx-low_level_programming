@@ -12,22 +12,22 @@
 int main(void)
 {
 	int n = 2;
-	unsigned long fib[100];
+	unsigned long fib1 = 0, fib2 = 1, sum;
 	float total = 0;
 
-	fib[0] = 1;
-	fib[1] = 2;
 	while (1)
 	{
-		if (total == 4000000)
+		sum = fib1 + fib2
+		if (sum > 4000000)
 		{
 			break;
 		}
-		fib[n] = fib[n - 1] + fib[n - 2];
-		if (fib[n] % 2 == 0)
+		if (sum % 2 == 0)
 		{
-			total = total + fib[n];
+			total = total + sum;
 		}
+		fib1 = fib2;
+		fib2 = sum;
 	}
 	printf("%f\n", total);
 	return (0);

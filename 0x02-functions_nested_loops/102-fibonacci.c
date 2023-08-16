@@ -17,11 +17,19 @@ int main(void)
 
 	fib[0] = 1;
 	fib[1] = 2;
-
+	printf("%d, %d, ", fib[1], fib[2]);
 	for (n = 2; n <= 49; n++)
 	{
-		sum = fib[n - 2] + fib[n - 1];
-		printf("%d,", sum);
+		fib[n] = fib[n - 2] + fib[n - 1];
+		if (n == 49)
+		{
+			printf("%d", fib[n]);
+		}
+		else
+		{
+			printf("%d, ", fib[n]);
+
+		}
 	}
 	return (0);
 }

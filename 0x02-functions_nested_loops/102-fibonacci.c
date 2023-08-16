@@ -27,7 +27,7 @@ int main(void)
 		if (n == 49)
 		{
 			fib[n] = fib[n - 1] + fib[n - 2];
-			printf("%lu ", fib[n]);
+			printf("%lu\n", fib[n]);
 		}
 	}
 

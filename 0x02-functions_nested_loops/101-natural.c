@@ -10,19 +10,16 @@
 
 int main(void)
 {
-	int n;
-	int sum1 = 0;
-	int sum2 = 0;
-	int total = 0;
+	int i, total = 0;
 
-	for (n = 1; n < 1024; n++)
+	while (i < 1024)
 	{
-		if (n % 3 == 0)
-			sum1 = sum1 + n;
-		if (n % 5 == 0)
-			sum2 = sum2 + n;
+		if ((i % 3 == 0) || (i % 5 == 0))
+		{
+			total = total + i;
+		}
+		i++;
 	}
-	total = sum1 + sum2;
 	printf("%d", total);
 
 	return (0);

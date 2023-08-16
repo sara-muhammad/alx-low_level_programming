@@ -19,8 +19,12 @@ int main(void)
 		sum = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = sum;
+		if (i < 98)
+			printf ("%ld, ", sum);
+		if (i == 98)
+			printf ("%ld\n", sum);
 		i++;
 	}
-	printf ("%ld", sum);
+	printf("%ld, ", sum);
 	return (0);
 }

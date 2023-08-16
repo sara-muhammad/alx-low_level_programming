@@ -20,9 +20,9 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 		if (i < 98)
-			printf ("%ld, ", sum);
+			printf("%ld, ", sum);
 		if (i == 98)
-			printf ("%ld\n", sum);
+			printf("%ld\n", sum);
 		i++;
 	}
 	printf("%ld, ", sum);

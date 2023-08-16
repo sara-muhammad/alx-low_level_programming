@@ -12,7 +12,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	long long total = 0;
+	long total = 0;
 
 	while (1)
 	{
@@ -28,6 +28,6 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 	}
-	printf("%lld\n", total);
+	printf("%ld\n", total);
 	return (0);
 }

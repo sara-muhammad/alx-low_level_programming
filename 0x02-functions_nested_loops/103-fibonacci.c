@@ -11,13 +11,12 @@
 
 int main(void)
 {
-	int n = 2;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 	float total = 0;
 
 	while (1)
 	{
-		sum = fib1 + fib2
+		sum = fib1 + fib2;
 		if (sum > 4000000)
 		{
 			break;

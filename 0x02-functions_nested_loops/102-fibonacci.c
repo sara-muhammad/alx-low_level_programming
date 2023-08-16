@@ -12,7 +12,7 @@
 int main(void)
 {
 	int n;
-	int fib[];
+	int fib[50];
 	int sum;
 
 	fib[0] = 1;

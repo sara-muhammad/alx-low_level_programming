@@ -20,7 +20,7 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d", total);
+	printf("%d\n", total);
 
 	return (0);
 }

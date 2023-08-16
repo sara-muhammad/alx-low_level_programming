@@ -42,6 +42,6 @@ void times_table(void)
 					printf(" %d", multi);
 			}
 		}
-		printf("\n");
+		printf(":\n");
 	}
 }

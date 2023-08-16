@@ -13,7 +13,6 @@ int main(void)
 {
 	int n;
 	int fib[50];
-	int sum;
 
 	fib[0] = 1;
 	fib[1] = 2;
@@ -21,15 +20,10 @@ int main(void)
 	for (n = 2; n <= 49; n++)
 	{
 		fib[n] = fib[n - 2] + fib[n - 1];
-		if (n == 49)
-		{
-			printf("%d", fib[n]);
-		}
-		else
-		{
-			printf("%d, ", fib[n]);
+		printf("%d, ", fib[n]);
+	}
 
-		}
+
 	}
 	return (0);
 }

@@ -17,10 +17,10 @@ int main(void)
 	while (i <= 98)
 	{
 		sum = fib1 + fib2;
-		total = total + sum;
 		fib1 = fib2;
 		fib2 = sum;
 		i++;
 	}
+	printf ("%ld", sum);
 	return (0);
 }

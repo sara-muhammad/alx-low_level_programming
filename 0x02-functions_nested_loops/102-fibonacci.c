@@ -21,7 +21,7 @@ int main(void)
 	for (n = 2; n <= 49; n++)
 	{
 		sum = fib[n - 2] + fib[n - 1];
+		printf("%d,", sum);
 	}
-	printf("%d\n", sum);
 	return (0);
 }

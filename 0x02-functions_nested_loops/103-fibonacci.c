@@ -19,7 +19,7 @@ int main(void)
 	fib[1] = 2;
 	while (1)
 	{
-		if (total == 4, 000, 000)
+		if (total == 4000000)
 		{
 			break;
 		}
@@ -29,6 +29,6 @@ int main(void)
 			total = total + fib[n];
 		}
 	}
-	printf("%lu\n", total);
+	printf("%lf\n", total);
 	return (0);
 }

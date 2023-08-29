@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strstr - check the code
+ * @haystack: string
+ * @needle:substring
  * Return: Always 0.
  */
 
@@ -19,9 +20,8 @@ char *_strstr(char *haystack, char *needle)
 			if (needle[i] == haystack[j])
 			{
 				return (&needle[i]);
-				break;
 			}
 		}
 	}
-	return(0);
+	return (0);
 }

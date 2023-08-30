@@ -20,7 +20,7 @@ void print_diagsums(int *a, int size)
 	
 	n = size - 1;
 
-	while(n <= (size * size))
+	while(n <= (size * size) - size)
 	{
 		sum2 = sum2 + a[n];
 		n = n + size - 1;

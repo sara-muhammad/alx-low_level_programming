@@ -10,15 +10,17 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, check, sum = 0;
 
 	if (argc == 1)
 		printf("%d\n", 0);
 	else
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] > '0' || *argv[i] < '9')
+			check = isdigit(*argv[i]);
+			
+			if (check != 0)
 			{
 				sum = sum + atoi(argv[i]);
 			}

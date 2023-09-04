@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, check, sum = 0;
+	int i, j, check, sum = 0;
 
 	if (argc == 1)
 		printf("%d\n", 0);
@@ -18,15 +18,18 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			check = isdigit(*argv[i]);
-			if (check != 0)
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				sum = sum + atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
+				check = isdigit(argv[i][j]);
+				if (check != 0)
+				{
+					sum = sum + atoi(argv[i]);
+				}
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 		}
 		printf("%d\n", sum);

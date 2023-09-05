@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - check the code for ALX School students.
@@ -9,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	int size = sizeof(str);
+	int size = strlen(str);
 	int i;
 	char *ptr;
 

@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strdup - check the code for ALX School students.
@@ -8,10 +7,11 @@
  */
 char *_strdup(char *str)
 {
-	int size = strlen(str);
-	int i;
+	int size, i;
 	char *ptr;
 
+	for (size = 0; *str != '\0'; str++)
+	;
 	if (str == NULL || size == 0)
 		return (NULL);
 	ptr = (char *) malloc(size * sizeof(char));

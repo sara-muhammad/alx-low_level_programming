@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int len(char *str);
 /**
  * argstostr - check the code for ALX School students.
  * @ac : input

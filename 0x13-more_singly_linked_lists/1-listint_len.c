@@ -4,7 +4,7 @@
  * listint_len - count number of elements in list
  * @h: pointer to the head of list
  *
- * Return: number of nodes 
+ * Return: number of nodes
  */
 
 size_t listint_len(const listint_t *h)
